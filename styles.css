@@ -321,12 +321,7 @@ form {
   
   
   @media screen and (max-width:430px){
-    .intro{
-        background-image: url("images/intro-m.webp");
-    }
-    .introBackground{
-        display: none;
-    }
+    
     .optionsCards, .aboutSection, .featuredService, .contactSection, form{
         display: flex;
         flex-direction: column;
