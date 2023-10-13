@@ -299,6 +299,7 @@ input{
     cursor: pointer;
 }
 form, input::placeholder, select{
+    color: black;
     font-size: 20px;
 }
 input, select{
@@ -353,6 +354,9 @@ form {
      input, select, #formButton{
         width: 80vw;
         height: 5vh;
+    }
+    .About{
+        margin-top:3vh;
     }
   }
     
