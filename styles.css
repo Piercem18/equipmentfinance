@@ -318,6 +318,7 @@ form {
     gap:3vw;
     margin-right: 3vw;
     margin-top: 3vh;
+    color:black;
   }
   
   
@@ -355,7 +356,7 @@ form {
         width: 80vw;
         height: 5vh;
     }
-    .About{
+    .aboutSection{
         margin-top:3vh;
     }
   }
