@@ -1,21 +1,20 @@
 
-/* ibm-plex-serif-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'IBM Plex Serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/ibm-plex-serif-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  *{
-    font-family: 'IBM Plex Serif', serif;
-}
+
+
 html{
     scroll-behavior: smooth;
   }
   a{
     text-decoration: none;
     color: white;
+  }
+  body{
+    margin:0;
+   
+  }
+  
+  h1,h2,h3{
+    font-family: 'Nanum Myeongjo', serif;
   }
 .intro{
     background-size: cover;
@@ -31,6 +30,7 @@ html{
     width: 100%;
     height: 100%;
     z-index: -2;
+    filter:brightness(50%);
 }
 
 .introBackground  img {
@@ -49,46 +49,96 @@ html{
     color: white;
     margin-right: 10vw;
     gap:5vw;
-    font-size: large;
+    font-size:1.3vw;
+   text-decoration: none;
 }
-.navBar{
-    font-size: 30px;
+.list, .clientsRight, .description{
+    font-size:1.3vw;
+}
+.list> ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:1vh;
+}
+.aboutLeft>p{
+    font-size:1.3vw;
+}
+.bothBars{
+    margin-left: 5vw;
+}
+h1{
+    color: #011a3f;
+}
+h2{
+    font-size:1.5vw;
 }
 .tt{
     padding:20px;
 }
 .ttt{
     padding: 10px;
+    font-size: 4vw;
+    
 }
 
 .description{
-    font-size: 20px;
+   
+    margin-left: 2vw;
+}
+.contactUscard{
+    margin-left: 2vw;
+    margin-bottom:1vh;
+}
+.card > h2{
+    margin-left: 2vw;
+}
+.card>.description{
+    color:#1a1a1a;
+    opacity: 80%;
+}
+.card>h2{
+    color:#1a1a1a;
+    opacity: 90%;
 }
 .contactBar>img{
-    height:15vh;
+    height:4vh;
 }
 .rightSide{
     display: flex;
     flex-direction: row;
-    margin-right: 5vw;
+    margin-left: 7vw;
+    
 }
+.column>h2{
+    color:#075f85;
+}
+li {
+   
+        color:#1a1a1a;
+        opacity: 80%;
+    }
+.rightSide, .column{
+    justify-content: center;
+}
+
 .logo{
     color:white;
 }
 .contactBar{
-    width: 100vw;
-    
+  
     display: flex;
 justify-content: space-between;
 }
 .title{
     display: flex;
     margin-top:9vh;
-    align-items: center;
+    justify-content: flex-start;
     color: white;
     flex-direction: column;
-    height: 70vh;
-  text-align: center;
+   
+    font-family: 'Nanum Myeongjo', serif;
+   
 }
 .title>img{
     width:50vw;
@@ -96,40 +146,31 @@ justify-content: space-between;
 }
 /* Define the button style with a semi-transparent background */
 .button {
-    background-color: rgba(255, 255, 255, 0.082); /* rgba(255, 0, 0, 0.5) represents a translucent red background */
+    background-color: #078583;
     color: white; /* Text color */
     padding: 10px 20px; /* Adjust padding as needed */
-    border-style: solid;
+
     border-radius: 50px; /* Add rounded corners if desired */
     cursor: pointer; /* Change cursor on hover for interactivity */
-    border-width: 5px;
-    border-color: white;
-    width:20vw;
-    font-size: 30px;
-}
-
-
-
-.aboutSection{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    gap: 10px; /* Adjust spacing as needed */
-    align-items: center;
-    
-    margin:5vw;
-}
-.tinyHeader{
-    color:rgba(6, 34, 194, 0.89);
-    font-size:25px;
-}
-.examplesHeader{
-    background-color: rgba(255, 255, 255, 0.521);
-}
-
-.options{
-    background-color: rgba(228, 228, 236, 0.932);
-    margin-bottom:5vh;
+    width:14vw;
  
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.FAQtext> h1{
+    margin:2vw;
+    color: #075f85;
+}
+.FAQ{
+    display: flex;
+    flex-direction:row;
+    padding: 5vh 5vw;
+    background-color: #93b7be18 ;
+   
 }
 .optionsCards{
     display: grid;
@@ -137,29 +178,29 @@ justify-content: space-between;
     gap: 20px; /* Adjust spacing as needed */
    
 }
-.examplesCards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
-    gap: 20px; /* Adjust spacing as needed */
-    align-items: center;
-}
-.whoWeAre, .whyUs, .clients{
+.work{
+    background-color: #075f85;
+    border-radius: 15px;
+    border-color: #075f85;
+    border: solid;
+    color:white;
+    width:7vw;
+    height:3vh;
     text-align: center;
-    font-size:20px;
-    margin: 3vw;
-    border-color: grey;
-    border-width: 1px;
-    border-style: solid;
-   padding: 20px;
-   background-color: rgba(255, 255, 255, 0.932);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.1vw;
+
 }
+
 .optionsHeader{
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     width:70vw;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .spaceLeft, .spaceRight{
     width:15vw;
@@ -173,49 +214,130 @@ justify-content: space-between;
     transition: 0.3s;
     background-color: white;
     border-radius: 10px;
-    text-align: center;
+   
     padding: 5px;
 }
-.examplesHeader{
+
+.ctScan{
+height:50vh;
+}
+.exampleSection{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+.column{
+    display: flex;
     flex-direction: column;
 }
-
+.learnMore{
+    background-color:#075f85;
+    color: white;
+    border-radius:15px;
+    height:3vh;
+    border-color: #073785;
+    margin: 1vw;
+    width:11vw;
+    padding:5px;
+    font-size:20px;
+}
+.nonMed{
+    background-color:white;
+    color: #075f85;
+    border-color:#075f85 ;
+    border-radius:15px;
+    border-width:2px;
+    height:3vh;
+    margin: 1vw;
+    border:solid;
+    width:15vw;
+    padding:5px;
+    font-size:20px;
+}
+.nonMedSection{
+    background-color:#154544;
+    color:white !important;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom:5vh;
+}
+.nonMedTitle, .contactTitle{
+font-size:2.3vw;
+font-family: 'Nanum Myeongjo', serif;
+}
+.nonMedSection{
+    display: flex;
+    flex-direction: row;
+}
+.lighterWhite{
+    color: white;
+    opacity:80%;
+    font-size: 1vw;
+}
 .options, .optionsCards{
-    margin-top: 5vh;
+    margin: 5vh;
 }
 .card:hover{
     transform: scale(1.05); /* Enlarge the card */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
 }
-.whoWeAre:hover{
-        background-image: linear-gradient(rgba(2, 27, 59, 0.842),rgba(2, 17, 59, 0.815)), url('images/tie.webp');
-        background-size: cover;
-        color:white;
-        transform: scale(1.1); /* Enlarge the card */
-        background-position: center center;
-      }
- .whyUs:hover{
-        background-image: linear-gradient(rgba(2, 27, 59, 0.842),rgba(2, 17, 59, 0.815)), url('images/handshake.webp');
-        background-size: cover;
-        background-position: center center;
-        color:white;
-        transform: scale(1.1); /* Enlarge the card */
-      }
- .clients:hover{
-        background-image: linear-gradient(rgba(2, 27, 59, 0.842),rgba(2, 17, 59, 0.815)), url('images/clients.webp');
-        background-size: cover;
-        color:white;
-        transform: scale(1.1); /* Enlarge the card */
-        background-position: center center;
-      }
-
-.featuredService{
+.whoWeAre{
     display: flex;
     flex-direction: row;
+    align-items: center;
+   
+}
+
+.headshot{
+    height:30vh;
+    margin:4vh;
+    
+}
+
+.aboutLeft, .aboutRight{
+    display: flex;
+    flex-direction: column;
+
+}
+.clientsIMG{
+    height:50vh;
+}
+.aboutLeft{
+    margin-left: 5vw;
+}
+.aboutLeft > h2{
+    color:#075f85;
+}
+.workWithUsTitle{
+    display:flex;
+    flex-direction: column;
+    margin-left:5vw;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+.workWithUsTitle> h2{
+    color:#075f85;
+}
+.aboutSection{
+    background-color:#e2dddd73;
+}
+.clientsRight{
     margin:5vw;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.workWithUsButton{
+    background-color:#e2dddd73;
+    color: #011a3f;
+   
+    border-color:#e2dddd73;
+    border-radius: 15px;
+    text-align: center;
+   display: flex;
+   justify-content: center;
 }
 .otherPics{
     display: flex;
@@ -228,15 +350,24 @@ justify-content: space-between;
 .otherPics>img{
     height:20vh;
 }
-
-.FAQ{
-    margin: 5vw;
+.whyWorkWithUs{
+    background-color:#e2dddd73;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding-bottom: 5vh;
 }
+
+
 .contactSection{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin:5vw;
+    
+}
+.contactUs{
+    width:40vw;
 }
 
 .form{
@@ -244,18 +375,8 @@ justify-content: space-between;
     justify-content: center;
 
 }
-.aboutSection{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url("images/businessSketch.webp");
-    background-position: center center;
-    background-size: cover;
-    
-}
-.optionsAndExamples{
-    background-image: url("images/ctscan.webp");
-    background-position: center center;
-    background-size: cover;
-   
-}
+
+
 .examplesCards{
     height:40vh;
 }
@@ -263,62 +384,114 @@ justify-content: space-between;
     margin-right:10vw;
     margin-left:1vw;
 }
-.contactSection{
-    background-color:#93b7bebd;
-    padding: 20px;
-    margin:0;
-}
-input{
-    background-color: #93b7bebd;
-    border-width: .01px;
-}
-.contactUs{
-    margin-left: 5vw;
+
+.secondHalf{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:2vw;
 }
  .form{
     display: flex;
    justify-content: center;
 }
+.option{
+    color:#073785;
+    font-size:1.2vw;
+}
+.FAQIMG> img{
+    width:50vw;
+    height: 100%;
+    background-color: #93b7be18 ;
+    margin-left: 2vw;
 
-.featuredService{
-    background-image: url("images/olive3.png");
-    background-position: center center;
-    background-size: cover;
-    margin:0;
-  
 }
-#formButton{
-    width:10vw;
-    height:5vh;
-    font-size: 25px;
-    margin-top: 2vh;
+.equipmentOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1vh;
+    gap:1vh;
+}
+.creditOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1vh;
+    gap:1vh;
+}
+.yearsOption{
     display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-items: center;
+   flex-direction: row;
+   padding: 1vh;
+   gap:3vh;
+}
+.contactTitle{
+    color:#075f85;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+  .left{
+    margin-left:5vw;
+    
+  }
+  .contactInfo>input{
+    height:3vh;
+    width: 15vw;
+  }
+#formButton{
+    background-color: #075f85;
+    border-radius: 60px;
+    border-color: #075f85;
+    border: solid;
+    color:white;
+    height:5vh;
+    width:15vw;
+    text-align: center;
     cursor: pointer;
+    font-size: 1.2vw;
 }
-form, input::placeholder, select{
-    color: black;
-    font-size: 20px;
-}
-input, select{
-    width: 20vw;
-    height: 3vh;
-}
+
 select{
     display: flex;
     flex-direction: column;
     background-color: #93b7bebd;
+}
+.right>label{
+    margin-bottom:2vh;
 }
 form {
 
     display: grid;
     grid-template-columns: 1fr 1fr; /* Three equal columns */
     gap:3vw;
-    margin-right: 3vw;
-    margin-top: 3vh;
+    margin:3vh;
     color:black;
+    place-items: center;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: rgba(150, 150, 150, 0.329);
+    padding:3vh;
+
+  }
+  
+  .footer {
+    background-color: #073785; /* Add your preferred background color */
+    color: white; /* Add your preferred text color */
+   
+    padding: 20px;
+    padding-top:5vh;
+  }
+  .logoFooter{
+    height:4vh;
+    padding-bottom:5vh;
+  }
+  .navBarFooter{
+    display: flex;
+    flex-direction: row;
+    gap:3vw;
+    height:20vh;
+    font-size:1.3vw;
   }
   
   
@@ -332,7 +505,7 @@ form {
         font-size: 20px;
     }
     .contactBar>img{
-        height:10vh;
+        height:3vh;
     }
     .button{
         width: 60vw;
@@ -353,11 +526,138 @@ form {
         background-color: #aab4a9;
     }
      input, select, #formButton{
-        width: 80vw;
+        
         height: 5vh;
     }
     .aboutSection{
         margin-top:3vh;
+    }
+    .navBar{
+        display: none;
+        
+    }
+    .ttt{
+        font-size:10vw;
+    }
+    .tt{
+        font-size:5vw;
+    }
+    .spaceLeft, .spaceRight{
+        display:none;
+    }
+    .description{
+        font-size:5vw;
+    }
+    h2{
+        font-size:7vw;
+    }
+    .option{
+        font-size:4vw;
+    }
+    .ctScan{
+        width:100vw;
+    }
+    .exampleSection{
+        flex-direction: column;
+    }
+    .list{
+        font-size: 5vw;
+    }
+    .buttons{
+        justify-content: space-between;
+    }
+    .learnMore{
+        width:35vw;
+    }
+    .nonMed{
+        width:35vw;
+        height:9vh;
+    }
+    .whoWeAre{
+        flex-direction: column;
+    }
+    .aboutLeft>p{
+        font-size: 4vw;
+    }
+    .clientsRight{
+        font-size: 4vw;
+    }
+    .work{
+        width:35vw;
+        font-size: 4vw;
+    }
+    .nonMedSection{
+        flex-direction: column;
+    }
+    .van{
+        width:80vw;
+    }
+    .lighterWhite{
+        font-size:4vw;
+    }
+    .nonMedTitle{
+        font-size:6vw;
+    }
+    .FAQIMG{
+        display: none;
+    }
+    .contactUs{
+        width:100vw;
+    }
+    .contactTitle{
+        font-size: 7vw;
+    }
+    .contactInfo>input{
+        width:80vw;
+        height: 5vh;
+    }
+    input[type=radio] {
+        height: 1em;
+    }
+    input[type=checkbox] {
+        height: 1em;
+    }
+    form{
+        grid-template-columns: 1fr;
+    }
+    .creditOptions, .yearsOption{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .equipmentOptions{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    #formButton{
+        width:50vw;
+        font-size: 4vw;
+    }
+    .navBarFooter{
+        display: none;
+    }
+    .logoFooter{
+        height:2vh;
+    }
+    .contactBar{
+        font-size: 4vw;
+    }
+    .clientsIMG{
+        width: 100vw;
+        height: auto;
+    }
+    .ctScan, .headshot{
+        width:100vw;
+        height:auto;
+    }
+    .footer{
+        width: 100vw;
+    }
+    img{
+        overflow: hidden;
+    }
+    .introBackground{
+ width: 110vw;
+ 
     }
   }
     
