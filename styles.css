@@ -474,7 +474,9 @@ form {
     padding:3vh;
 
   }
-  
+  .van{
+    width:40vw;
+  }
   .footer {
     background-color: #073785; /* Add your preferred background color */
     color: white; /* Add your preferred text color */
@@ -658,6 +660,9 @@ form {
     .introBackground{
  width: 110vw;
  
+    }
+    .tt{
+        display: none;
     }
   }
     
